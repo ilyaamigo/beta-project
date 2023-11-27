@@ -38,7 +38,7 @@ graph LR;
   untracked -- "git add" --> staged;
   modified -- "git add" --> staged;
   staged -- "git commit -m" --> tracked/comitted;
-  tracked/comitted; -- "git status" --> modified;
+  tracked/comitted -- "git status" --> modified;
 
 %% схема переходов по статусам файла
 ``` 

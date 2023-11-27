@@ -38,8 +38,9 @@ graph LR;
   untracked -- "git add" --> staged;
   modified -- "git add" --> staged;
   staged -- "git commit -m" --> tracked/comitted;
+  tracked/comitted; -- "git status" --> modified;
 
-%% тестовая mermaid-схема переходов по статусам файла
+%% схема переходов по статусам файла
 ``` 
 
 ## Основные команды:
